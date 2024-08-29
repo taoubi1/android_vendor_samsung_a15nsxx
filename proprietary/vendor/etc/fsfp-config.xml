@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sunwave:Config xmlns:sunwave="http://www.sunwavecorp.com/some-location" platform="传音/传音/合力泰-Mt6757-beand-sw9251/sw9088">
+  <feature>
+    <key_emulation cname="按键功能开关" desc="默认：false" format="boolean">true</key_emulation>
+    <navigation cname="导航功能开关" desc="默认：false" format="boolean">false</navigation>
+    <auth_key cname="比对同时报key值,使能" desc="比对同时报key值使能。默认：false" format="boolean">false</auth_key>
+    <charging_fix cname="充电干扰过滤开关" default="false" desc="过滤充电干扰信号。默认：false" format="boolean" useable="false">true</charging_fix>
+    <side cname="侧边" desc="侧边。默认：false" format="boolean">true</side>
+  </feature>
+
+  <algo>
+    <enrolling_num_max cname="单模板录入最大次数" desc="大于8。默认: 15" format="array" options="10次|11次|12次|13次|14次|15次|16次|17次|18次|19次|20次" values="10|11|12|13|14|15|16|17|18|19|20">20</enrolling_num_max>
+    <enrolling_samples cname="单模板录入次数" desc="不得大于单模板录入最大次数。默认: 动态计算" format="array" options="动态计算|8次|9次|10次|11次|12次|13次|14次|15次" values="0|8|9|10|11|12|13|14|15">20</enrolling_samples>
+    
+    
+       <double_verify_retry cname="比对失败重试次数" default="1" desc="匹配失败重试次数。默认: 1次" format="array" options="0次|1次|2次|3次" useable="true" values="0|1|2|3">1</double_verify_retry>
+        <overlay_en cname="录入重复判断使能" default="false" desc="录入重复判断使能，使能之后将使用自定义配置的参数。默认: 使用默认参数" format="boolean" useable="false">false</overlay_en>
+	   <overlay_everyone cname="录入重复判断类型" default="0" desc="录入时与所有录入过的做重复判断。默认: 只与前一张判断" format="array" options="false|true" useable="true" values="false|true">false</overlay_everyone>
+	<overlay_area cname="录入重复判断面积" default="0" desc="录入时与上一张的重复判断面积。默认: 60" format="array" options="50|60|70|80|90" useable="true" values="50|60|70|80|90">70</overlay_area>
+  </algo>
+
+  <device>
+    <key_code cname="默认按键键值" desc="按键功能打开后，上报的按键值，注意要与驱动同步。默认：SF_KEY_F11" format="array" options="SF_KEY_HOME|SF_KEY_MENU|SF_KEY_BACK|SF_KEY_F11|SF_KEY_ENTER|SF_KEY_UP|SF_KEY_LEFT|SF_KEY_RIGHT|SF_KEY_DOWN|SF_KEY_WAKEUP|SF_KEY_F12" values="1|2|3|4|5|6|7|8|9|10|11">4</key_code>
+  </device>
+
+  <sensor>
+    <sensitivity_8393 cname="8393灵敏度参数" default="0x0a" desc="输入请带0x，16进制。取值范围[0x05,0x20]默认：0x0d" format="hexInteger" max="0x20" min="0x05" useable="true">0x0A</sensitivity_8393>
+    <check_otd_en>false</check_otd_en>
+    <check_otd_int>false</check_otd_int>
+  </sensor>
+
+  <driver>
+  </driver>
+
+  <navigation>
+    <mode cname="导航方向模式选择" desc="导航方向模式选择。默认：SF_NAV_MODE_AUTO" format="array" options="SF_NAV_MODE_ALL|SF_NAV_MODE_LMR|SF_NAV_MODE_UMD|SF_NAV_MODE_AUTO" values="0|1|2|3">3</mode>
+    <direct cname="导航方向映射" desc="导航方向映射。默认：UDLR" format="string">LRUD</direct>
+    <longkey_en cname="导航长按开关" desc="默认：true" format="boolean">false</longkey_en>
+  </navigation>
+
+  <diagnosis>
+      <img_invciper_data cname="导出原始图像" default="false" desc="需依赖 导出指纹图像。默认：false" format="boolean" useable="true">false</img_invciper_data>
+      <data_dumping cname="导出指纹图像" default="false" desc="默认：false" format="boolean" useable="true">false</data_dumping>
+    <log_level cname="调试信息等级" desc="LOG 打印等级。默认：LOG_LEVEL_INF" format="array" options="LOG_LEVEL_INF|LOG_LEVEL_ERR" values="2|3">2</log_level>
+  </diagnosis>
+
+  <solution>
+  </solution>
+
+  <customer>
+    <transsion_f14 cname="传音--F14使能" desc="传音--F14使能。默认：false" format="boolean">false</transsion_f14>
+    <msg_base cname="消息基准" desc="消息的基准。默认：1000" format="boolean">1000</msg_base>
+    <optimize_cpu>false</optimize_cpu>
+</customer>
+
+
+</sunwave:Config>
+
