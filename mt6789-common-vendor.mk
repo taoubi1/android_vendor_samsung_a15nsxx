@@ -6,8 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/tecno/mt6789-common
 
 PRODUCT_COPY_FILES += \
-    vendor/tecno/mt6789-common/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
-    vendor/tecno/mt6789-common/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
     vendor/tecno/mt6789-common/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
     vendor/tecno/mt6789-common/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/tecno/mt6789-common/proprietary/system_ext/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmtk_vt_wrapper.so \
