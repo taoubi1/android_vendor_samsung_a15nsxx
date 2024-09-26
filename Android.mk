@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter LG7n LG8n,$(TARGET_DEVICE)),)
+ifneq ($(filter LG7n LG8n hyperreal luminance,$(TARGET_DEVICE)),)
 
 endif
