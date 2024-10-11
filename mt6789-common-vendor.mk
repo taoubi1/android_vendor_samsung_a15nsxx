@@ -76,7 +76,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.tranHwInfo@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.tranHwInfo@1.0-service \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/hw/vendor.tne@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.tne@1.0-service \
-    vendor/tecno/mt6789-common/proprietary/vendor/bin/hw/vendor.transsion.hardware.hyperion.hap@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.transsion.hardware.hyperion.hap@1.0-service \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/hw/vendor.trustonic.tee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.tee@1.1-service \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
@@ -224,7 +223,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.transsion.hardware.hyperion.hap@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.hyperion.hap@1.0-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
@@ -608,7 +606,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrvideo.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhydra.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libhyperion_hap_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhyperion_hap_ca.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libicd_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libicd_decoder.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libimgsensorca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimgsensorca.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libimsg_log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimsg_log.so \
@@ -1150,7 +1147,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libhfmanagerwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfmanagerwrapper.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwm.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhydra.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/libhyperion_hap_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhyperion_hap_ca.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libicd_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libicd_decoder.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libimagebuffer_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagebuffer_wrapper.so \
@@ -1672,7 +1668,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.nxp.nxpese@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpese@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.nxp.nxpnfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfc@2.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.nxpnfclegacy@1.0.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.transsion.hardware.hyperion.hap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.hyperion.hap@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.transsion.hardware.tne.tneengine@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.tne.tneengine@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.transsion.hardware.tranlog@1.0.so \
