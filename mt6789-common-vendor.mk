@@ -567,7 +567,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSQLiteModule_VER_ALL.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTEECommon.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_cust.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_key.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec_mtk.so \
@@ -755,7 +754,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libCamera_s5kjn1mipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kjn1mipiraw_Scene_Capture_4cell.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libCamera_s5kjn1mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kjn1mipiraw_Scene_Preview.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaal_cust_func.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaalservice.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaiselector.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcam.hal3a.log.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcam.halsensor.hwintegration.so \
@@ -1057,7 +1055,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_eara_io_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_timer.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_eara_io_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_util.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadpcmdec_mtk.so \
@@ -1408,7 +1405,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/mt6789/libaaa_ltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaaa_ltm.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/mt6789/libaaa_ltmx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaaa_ltmx.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaal_cust_func.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaalservice.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/mt6789/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libacdk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/mt6789/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_moon.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/mt6789/libaiawb_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_p1ggm.so \
