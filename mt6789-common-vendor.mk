@@ -1037,11 +1037,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTEECommon.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libVkLayer_mtk_rt_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_mtk_rt_sdk.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_eara_io_scndet.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_scndet.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_eara_io_service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_service.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_eara_io_systracer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_systracer.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_eara_io_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_timer.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_eara_io_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_util.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_mtk.so \
