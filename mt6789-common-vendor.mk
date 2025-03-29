@@ -214,6 +214,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/security/cacerts/01419da9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/01419da9.0 \
@@ -363,34 +364,17 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/HEVCSecureVdecCA.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_meow.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_data.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_gift.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_qt.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/egl/mt6789/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/mt6789/libGLES_mali.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/kmsetkey.trustonic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.trustonic.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/libMcGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libMcGatekeeper.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/mt6789/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/gralloc.common.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vulkan.mali.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAVCSecureVencCA.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libNoFpsActor.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTEECommon.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_key.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libapmonitor_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapmonitor_vendor.so \
@@ -411,12 +395,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libdynamiclog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdynamiclog.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpud.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_extra.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_metadata.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloctypes_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libgz_gp_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_gp_client.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgz_uree.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libh264dec_customize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_customize.so \
@@ -433,7 +411,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipsec_ims_shr.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminiui.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmml.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmprofile.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp3dec_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmp4enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_sa.ca7.so \
@@ -448,7 +425,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libnwk_opt_halwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnwk_opt_halwrap_vendor.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libpixelflinger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpixelflinger.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpkm.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/librcs_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_interface.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/librcs_volte_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_volte_core.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
@@ -456,7 +432,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libtranslator_mapi_v3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_mapi_v3.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libtranslator_mdmi_v2.8.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_mdmi_v2.8.2.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libtranslator_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_utils.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_oal.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libvcodec_utility_plat.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_utility_plat.mt6789.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libvcodecdrv_header_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv_header_stub.so \
@@ -477,15 +452,9 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/meta_wifi_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/meta_wifi_data.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/arm.graphics-V1-ndk_platform.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaal_cust_func.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaiselector.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libdpframework.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libgpudataproducer.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtk_drvb.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libnir_neon_driver.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_cust_base.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_prot.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpqparamparser.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libvcodec_utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodec_utility.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libvcodec_utility_v3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodec_utility_v3a.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libvcodecdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodecdrv.so \
@@ -500,22 +469,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.1.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nwk_opt@1.0.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.0.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.1.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.10.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.10.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.11.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.11.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.12.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.12.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.13.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.13.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.14.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.14.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.15.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.15.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.2.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.3.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.4.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.5.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.6.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.7.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.8.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.9.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.rcs@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.rcs@2.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so \
