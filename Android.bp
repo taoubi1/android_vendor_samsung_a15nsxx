@@ -18,18 +18,13 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/sound_trigger.primary.mt6789.so",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/hw/sound_trigger.primary.mt6789.so",
             ],
         },
     },
-    compile_multilib: "both",
+    compile_multilib: "64",
     check_elf_files: false,
     relative_install_path: "hw",
     prefer: true,
