@@ -411,7 +411,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libvpudv3a_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvpudv3a_vcodec.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.rcs@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.rcs@2.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/APUWareApusysServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareApusysServer.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/APUWareHmpServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareHmpServer.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/APUWareUtilsServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareUtilsServer.so \
@@ -730,7 +729,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmegface.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminiui.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/libminizip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminizip.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmagent.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
