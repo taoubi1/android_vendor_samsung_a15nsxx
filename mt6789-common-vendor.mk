@@ -447,8 +447,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vulkan.mali.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/hw/sensors.mediatek.V2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mediatek.V2.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/hw/vendor.fptool.fingerprint@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.fptool.fingerprint@2.0-impl.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
@@ -638,7 +636,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libapusys_edma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapusys_edma.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libarmnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarmnn_ndk.mtk.vndk.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_hw_test.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
@@ -1159,8 +1156,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so \
