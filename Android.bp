@@ -71,17 +71,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-    name: "ImsService",
-    owner: "tecno",
-    apk: "proprietary/system/priv-app/ImsService/ImsService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-}
-
-android_app_import {
     name: "GpuGameDriver.mt6789",
     owner: "tecno",
     apk: "proprietary/vendor/priv-app/GpuGameDriver.mt6789/GpuGameDriver.mt6789.apk",
@@ -91,70 +80,6 @@ android_app_import {
     },
     privileged: true,
     soc_specific: true,
-}
-
-dex_import {
-    name: "mediatek-common",
-    owner: "tecno",
-    jars: [
-        "proprietary/system/framework/mediatek-common.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-framework",
-    owner: "tecno",
-    jars: [
-        "proprietary/system/framework/mediatek-framework.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-ims-base",
-    owner: "tecno",
-    jars: [
-        "proprietary/system/framework/mediatek-ims-base.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-ims-common",
-    owner: "tecno",
-    jars: [
-        "proprietary/system/framework/mediatek-ims-common.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-ims-extension-plugin",
-    owner: "tecno",
-    jars: [
-        "proprietary/system/framework/mediatek-ims-extension-plugin.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-telecom-common",
-    owner: "tecno",
-    jars: [
-        "proprietary/system/framework/mediatek-telecom-common.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-telephony-base",
-    owner: "tecno",
-    jars: [
-        "proprietary/system/framework/mediatek-telephony-base.jar",
-    ],
-}
-
-dex_import {
-    name: "mediatek-telephony-common",
-    owner: "tecno",
-    jars: [
-        "proprietary/system/framework/mediatek-telephony-common.jar",
-    ],
 }
 
 prebuilt_etc_xml {

@@ -6,31 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/tecno/mt6789-common
 
 PRODUCT_COPY_FILES += \
-    vendor/tecno/mt6789-common/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
-    vendor/tecno/mt6789-common/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmtk_vt_wrapper.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvcodec_cap.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvcodec_capenc.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib/libvsim-adaptor-client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvsim-adaptor-client.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_adapt.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_rtp.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_socketwrapper.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_service.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmtk_vt_wrapper.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libsignal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsignal.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsink.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libsource.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsource.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsysenv_system.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvcodec_cap.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvcodec_capenc.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libvsim-adaptor-client.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvsim-adaptor-client.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvt_avsync.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so \
-    vendor/tecno/mt6789-common/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/AgentTest:$(TARGET_COPY_OUT_VENDOR)/bin/AgentTest \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/bip:$(TARGET_COPY_OUT_VENDOR)/bin/bip \
@@ -72,7 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/kmsetkey_ca.trustonic:$(TARGET_COPY_OUT_VENDOR)/bin/kmsetkey_ca.trustonic \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/lbs_hidl_service:$(TARGET_COPY_OUT_VENDOR)/bin/lbs_hidl_service \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
-    vendor/tecno/mt6789-common/proprietary/vendor/bin/meta_tst:$(TARGET_COPY_OUT_VENDOR)/bin/meta_tst \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/mnld:$(TARGET_COPY_OUT_VENDOR)/bin/mnld \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/mrdump_tool:$(TARGET_COPY_OUT_VENDOR)/bin/mrdump_tool \
     vendor/tecno/mt6789-common/proprietary/vendor/bin/mt6660_calibration:$(TARGET_COPY_OUT_VENDOR)/bin/mt6660_calibration \
@@ -362,26 +336,19 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libh264dec_se.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_se.ca7.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libh264enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264enc_sa.ca7.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libimsg_log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimsg_log.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_ulit.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipsec_ims_shr.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminiui.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmprofile.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp3dec_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmp4enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_sa.ca7.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmp4enc_xa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_xa.ca7.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libmtk_bsg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk_bsg.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcutils.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkhardware_legacy.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkproperty.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkrillog.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/libpixelflinger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpixelflinger.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpkm.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/librcs_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_interface.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/librcs_volte_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_volte_core.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_oal.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libvcodec_utility_plat.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_utility_plat.mt6789.so \
@@ -396,9 +363,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libvpud_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpud_vcodec.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/arm.graphics-V1-ndk_platform.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaiselector.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtk_drvb.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libnir_neon_driver.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libvcodec_utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodec_utility.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libvcodec_utility_v3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodec_utility_v3a.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/mt6789/libvcodecdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodecdrv.so \
@@ -724,6 +689,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmagent.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
+    vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmprofile.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmp3dec_mtk.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
@@ -744,7 +710,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrillog.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkrilutils.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkshifter_vendor.so \
-    vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmtkspparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkspparser.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmtksysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtksysutils.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmtktinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtktinyxml.so \
     vendor/tecno/mt6789-common/proprietary/vendor/lib64/libmtkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkutils.so \
@@ -1216,16 +1181,7 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.mt6789 \
     libwvhidl \
     libwvdrmengine \
-    ImsService \
     GpuGameDriver.mt6789 \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
