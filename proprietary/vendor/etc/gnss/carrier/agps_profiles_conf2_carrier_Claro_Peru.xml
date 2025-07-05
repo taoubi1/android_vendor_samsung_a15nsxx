@@ -25,9 +25,9 @@
   />
 
   <up_setting
-    ca_enable="true"
     dedicated_apn_enable="true"
     esupl_apn_mode="3"
+    imsi_enable="true"
   />
 
 </mtk_agps_profiles>

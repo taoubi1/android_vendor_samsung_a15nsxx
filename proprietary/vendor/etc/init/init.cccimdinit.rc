@@ -16,6 +16,7 @@ on post-fs-data
 
 #from ccci_fsd
     mkdir /data/vendor/mdlpm 0770 system radio
+    mkdir /data/vendor/log  0770 system root
     restorecon /data/vendor/mdlpm
 #    mkdir /data/vendor/md3 0770 system radio
     restorecon /data/vendor/md3
@@ -25,12 +26,14 @@ on post-fs-data
 
     restorecon_recursive /mnt/vendor/protect_f
     restorecon_recursive /mnt/vendor/protect_s
+    restorecon_recursive /mnt/vendor/nvdata
+    restorecon_recursive /data/vendor/log
 
 #SeLinux
 
 service ccci_mdinit /vendor/bin/ccci_mdinit 0
     user system
-    group radio system
+    group radio system root bluetooth log
     class core
     priority -20
     ioprio rt 4

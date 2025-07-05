@@ -9,7 +9,7 @@
   />
 
   <up_setting
-    ca_enable="true"
+    imsi_enable="true"
     cert_from_sdcard="true"
   />
 

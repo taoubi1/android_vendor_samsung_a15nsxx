@@ -27,7 +27,7 @@
   />
 
   <up_setting
-    ca_enable="true"
+    imsi_enable="true"
     up_lppe_civic_enable="false"
   />
 

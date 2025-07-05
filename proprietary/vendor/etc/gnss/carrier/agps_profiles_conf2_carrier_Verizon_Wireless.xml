@@ -33,7 +33,7 @@
   />
 
   <up_setting
-    ca_enable="true"
+    imsi_enable="true"
     supl_version="2"
     ut3="30"
     supl_ver_minor="0"
@@ -41,6 +41,7 @@
     force_otdoa_assist_req="true"
     tls_version="2"
     tc10_supl_1_0_disable="true"
+    freq_Otdoa_enable="false"
   />
 
 </mtk_agps_profiles>

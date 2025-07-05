@@ -28,7 +28,7 @@
   />
 
   <up_setting
-    ca_enable="true"
+    imsi_enable="true"
     msa_enable="true"
     qop_delay="5"
     force_otdoa_assist_req="true"

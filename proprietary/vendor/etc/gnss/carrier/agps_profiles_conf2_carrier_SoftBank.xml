@@ -31,7 +31,7 @@
   />
 
   <up_setting
-    ca_enable="true"
+    imsi_enable="true"
     dedicated_apn_enable="false"
     preferred_2g3g_cell_age="0"
     lpp_enable="false"
