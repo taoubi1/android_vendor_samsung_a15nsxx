@@ -208,6 +208,126 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.common-V1-ndk_platform",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/android.hardware.biometrics.common-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.common-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.face-V1-ndk_platform",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/android.hardware.biometrics.face-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.biometrics.common-V1-ndk_platform",
+                "android.hardware.common-V2-ndk_platform",
+                "android.hardware.keymaster-V3-ndk_platform",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.face-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.biometrics.common-V1-ndk_platform",
+                "android.hardware.common-V2-ndk_platform",
+                "android.hardware.keymaster-V3-ndk_platform",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "fingerprint.default",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/fingerprint.default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbauthserver",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/fingerprint.default.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbauthserver",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
     owner: "samsung",
     strip: {
@@ -477,6 +597,78 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libegis_fp_normal_sensor_test",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libegis_fp_normal_sensor_test.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgf_in_system_lib",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libgf_in_system_lib.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libc++",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgf_in_system_lib.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libc++",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libgz_gp_client",
     owner: "samsung",
     strip: {
@@ -718,47 +910,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libladder",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmp3dec_mtk",
     owner: "samsung",
     strip: {
@@ -791,6 +942,47 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqfp_sensortest",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libqfp_sensortest.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqfp_sensortest.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],
@@ -1025,6 +1217,49 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.biometrics.face-V3-ndk_platform",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.samsung.hardware.biometrics.face-V3-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.biometrics.common-V1-ndk_platform",
+                "android.hardware.biometrics.face-V1-ndk_platform",
+                "android.hardware.common-V2-ndk_platform",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.biometrics.face-V3-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.biometrics.common-V1-ndk_platform",
+                "android.hardware.biometrics.face-V1-ndk_platform",
+                "android.hardware.common-V2-ndk_platform",
                 "libc++",
                 "libc",
                 "libm",
@@ -1872,6 +2107,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.system.wifi.keystore@1.0",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.system.wifi.keystore@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "camera.device@1.0-impl",
     owner: "samsung",
     strip: {
@@ -2395,33 +2658,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "unihal_entry",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "fingerprint.default",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/fingerprint.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbauthserver",
                 "libc++",
                 "libc",
                 "libm",
@@ -3034,40 +3270,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "hw/mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "sound_trigger.primary.default",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/sound_trigger.primary.default.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libhardware_legacy",
-                "libhardware",
-                "libmedia_helper",
-                "libhidlbase",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
@@ -11574,29 +11776,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libegis_fp_normal_sensor_test",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libese-grdg",
     owner: "samsung",
     strip: {
@@ -11858,32 +12037,6 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgf_in_system_lib",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgf_in_system_lib.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -12915,6 +13068,93 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libpuresoftkeymasterdevice",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeystore-engine-wifi-hidl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so",
+            ],
+            shared_libs: [
+                "android.system.keystore2-V1-ndk_platform",
+                "libbase",
+                "libbinder_ndk",
+                "libcrypto",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libkeystore-wifi-hidl",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libkeystore-wifi-hidl.so",
+            ],
+            shared_libs: [
+                "android.system.wifi.keystore@1.0",
+                "libbase",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libladder",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libladder.so",
+            ],
+            shared_libs: [
+                "libunwindstack",
+                "liblog",
+                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -14532,33 +14772,6 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libcutils",
                 "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqfp_sensortest",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqfp_sensortest.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -26101,6 +26314,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.security.fkeymaster-V1-ndk_platform",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.security.fkeymaster-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.security.hermes-V1-ndk_platform",
     owner: "samsung",
     strip: {
@@ -26290,6 +26528,22 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
+    soc_specific: true,
+}
+
+prebuilt_apex {
+    name: "com.samsung.android.biometrics.face.signed",
+    owner: "samsung",
+    src: "proprietary/vendor/apex/com.samsung.android.biometrics.face.signed.apex",
+    filename: "com.samsung.android.biometrics.face.signed.apex",
+    soc_specific: true,
+}
+
+prebuilt_apex {
+    name: "com.samsung.android.biometrics.fingerprint.signed",
+    owner: "samsung",
+    src: "proprietary/vendor/apex/com.samsung.android.biometrics.fingerprint.signed.apex",
+    filename: "com.samsung.android.biometrics.fingerprint.signed.apex",
     soc_specific: true,
 }
 
@@ -26488,6 +26742,15 @@ prebuilt_etc_xml {
     name: "vendor.samsung.hardware.radio_manifest_2_31.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_31.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.samsung.hardware.security.fkeymaster-service.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.security.fkeymaster-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -27284,6 +27547,47 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhardware",
                 "vendor.mediatek.hardware.pq@2.15",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.samsung.hardware.biometrics.face-service",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libgui_vendor",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hidl.token@1.0-utils",
+                "libbase",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libstagefright_foundation",
+                "android.hardware.common-V2-ndk_platform",
+                "android.hardware.keymaster-V3-ndk_platform",
+                "android.hardware.biometrics.common-V1-ndk_platform",
+                "android.hardware.biometrics.face-V1-ndk_platform",
+                "vendor.samsung.hardware.biometrics.face-V3-ndk_platform",
                 "libc++",
                 "libc",
                 "libm",
@@ -28117,6 +28421,39 @@ cc_prebuilt_binary {
                 "liblog",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.samsung.hardware.security.fkeymaster-service",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vendor.samsung.hardware.security.fkeymaster-service",
+            ],
+            shared_libs: [
+                "libcrypto",
+                "libcutils",
+                "libhidlbase",
+                "libbase",
+                "libutils",
+                "liblog",
+                "libbinder_ndk",
+                "vendor.samsung.hardware.security.fkeymaster-V1-ndk_platform",
+                "libteecl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },

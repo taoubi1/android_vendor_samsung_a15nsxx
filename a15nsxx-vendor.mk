@@ -243,6 +243,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64_mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64_mtk.rc \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc \
+    vendor/samsung/a15nsxx/proprietary/vendor/etc/init/vendor.samsung.hardware.security.fkeymaster-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.fkeymaster-service.rc \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/init/vendor.samsung.hardware.security.hermes.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.hermes.rc \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/init/vendor.samsung.hardware.snap-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.snap-lazy.rc \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/init/vendor.samsung.hardware.sysinput@1.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.sysinput@1.3-service.rc \
@@ -266,6 +267,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp_RF.conf \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
+    vendor/samsung/a15nsxx/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml \
+    vendor/samsung/a15nsxx/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/plmn_delta_chn.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_chn.bin \
     vendor/samsung/a15nsxx/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
@@ -395,26 +398,32 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
+    android.hardware.biometrics.common-V1-ndk_platform \
+    android.hardware.biometrics.face-V1-ndk_platform \
+    fingerprint.default \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA \
     libadpcmdec_mtk \
     libaedv \
     libbwc \
     libccci_util \
+    libegis_fp_normal_sensor_test \
+    libgf_in_system_lib \
     libgz_gp_client \
     libgz_uree \
     libhevce_sb.ca7.android \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
-    libladder \
     libmp3dec_mtk \
+    libqfp_sensortest \
     libthha \
     libvcodec_oal \
     libvcodecdrv_header_stub \
     arm.graphics-V1-ndk_platform \
     libmtk_drvb \
     vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.samsung.hardware.biometrics.face-V3-ndk_platform \
     libFrucSSMLib \
     libHEVCdec_sa.ca7.android \
     libh264dec_customize \
@@ -444,6 +453,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0 \
     android.hardware.keymaster@4.1 \
     android.hardware.weaver@1.0 \
+    android.system.wifi.keystore@1.0 \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
@@ -459,7 +469,6 @@ PRODUCT_PACKAGES += \
     audio.primary.mediatek \
     audio.r_submix.mediatek \
     camera.unihal.default \
-    fingerprint.default \
     gatekeeper.mt6789 \
     gps.default \
     hwcomposer.mtk_common \
@@ -474,7 +483,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.pq@2.15-impl \
     vulkan.mali \
-    sound_trigger.primary.default \
     sound_trigger.primary.mt6789 \
     vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
@@ -809,7 +817,6 @@ PRODUCT_PACKAGES += \
     libdecrypt \
     libdsms_vendor \
     libdynamiclog \
-    libegis_fp_normal_sensor_test \
     libese-grdg \
     libfidoauthnr_v2 \
     libfile_op \
@@ -820,7 +827,6 @@ PRODUCT_PACKAGES += \
     libformatConverter.unifunc \
     libformatter \
     libged \
-    libgf_in_system_lib \
     libgpu_aux \
     libgpud \
     libgralloc_extra \
@@ -856,6 +862,9 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages \
     libkeymaster_portable \
     libkeymint \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl \
+    libladder \
     libminiui \
     libmipc \
     libmmagent \
@@ -913,7 +922,6 @@ PRODUCT_PACKAGES += \
     libpqframework \
     libprofileparamstorage \
     libpuresoftkeymasterdevice \
-    libqfp_sensortest \
     libratconfig \
     librecordalive \
     libremosaic_wrapper \
@@ -1259,6 +1267,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.bridge@2.0 \
     vendor.samsung.hardware.radio.bridge@2.1 \
     vendor.samsung.hardware.radio.channel@2.0 \
+    vendor.samsung.hardware.security.fkeymaster-V1-ndk_platform \
     vendor.samsung.hardware.security.hermes-V1-ndk_platform \
     vendor.samsung.hardware.snap-V1-ndk_platform \
     vendor.samsung.hardware.sysinput@1.0 \
@@ -1266,6 +1275,8 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.sysinput@1.2 \
     vendor.samsung.hardware.sysinput@1.3 \
     vintf-codecsolution-V2-ndk_platform \
+    com.samsung.android.biometrics.face.signed \
+    com.samsung.android.biometrics.fingerprint.signed \
     imsservice \
     mediatek-common \
     mediatek-framework \
@@ -1288,6 +1299,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.exclude.mediatek.xml \
     vendor.samsung.hardware.radio.exclude_ship.mediatek.xml \
     vendor.samsung.hardware.radio_manifest_2_31.xml \
+    vendor.samsung.hardware.security.fkeymaster-service.xml \
     vendor.samsung.hardware.security.hermes.xml \
     vendor.samsung.hardware.sehradio_manifest_2_31.xml \
     vendor.samsung.hardware.snap-default.xml \
@@ -1317,6 +1329,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
+    vendor.samsung.hardware.biometrics.face-service \
     vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
     vendor.samsung.hardware.camera.provider@4.0-service_64 \
     vendor.samsung.hardware.gnss@2.0-service \
@@ -1345,6 +1358,7 @@ PRODUCT_PACKAGES += \
     thermal_core \
     tzdaemon \
     tzts_daemon \
+    vendor.samsung.hardware.security.fkeymaster-service \
     volte_clientapi_ua \
     volte_rcs_ua \
     wifitest \
